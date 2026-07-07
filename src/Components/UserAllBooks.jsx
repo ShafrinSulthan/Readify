@@ -16,10 +16,14 @@ const UserAllBooks = () => {
     return matchesSearch && matchesCategory;
   });
 
-  async function fetchBooks(params) {
-    const res = await axios.get('https://readify-fdkn.onrender.com/books/books')
-    setBooks(res.data)
+  async function fetchBooks() {
+  try {
+    const res = await axios.get("https://readify-fdkn.onrender.com/books");
+    setBooks(res.data);
+  } catch (err) {
+    console.log(err);
   }
+}
   useEffect(() => {
     fetchBooks()
   }, [])

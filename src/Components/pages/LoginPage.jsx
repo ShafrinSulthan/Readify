@@ -31,7 +31,7 @@ const LoginPage = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.get(`https://readify-fdkn.onrender.com/books/users?username=${user.username}&password=${user.password}`);
+      const res = await axios.get( `https://readify-fdkn.onrender.com/users?username=${user.username}&password=${user.password}`);
 
       if (res.data.length > 0) {
         setLoggedUser({

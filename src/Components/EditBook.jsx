@@ -20,7 +20,7 @@ const EditBook = () => {
     useEffect(() => {
         async function getBook() {
             try {
-                const res = await axios.get(`https://readify-fdkn.onrender.com/books/books/${id}`);
+                const res = await axios.get(`https://readify-fdkn.onrender.com/books/${id}`);
                 setBook(res.data);
             } catch (error) {
                 console.log(error);
@@ -86,10 +86,7 @@ const EditBook = () => {
     }
 
     try {
-        const res = await axios.put(
-            `https://readify-fdkn.onrender.com/books/books/${id}`,
-            book
-        );
+        const res = await axios.put( `https://readify-fdkn.onrender.com/books/${id}`, book);
 
         if (res.status === 200) {
             alert("Book Updated Successfully");
@@ -117,7 +114,7 @@ const EditBook = () => {
                             <div className="mb-3">
                                 <label className="form-label fw-semibold">Book ID</label>
                                 <input type="text" value={book.bookId}  name="bookId" onChange={handleChange} className="form-control" readOnly required/>
-                            {errors.bookName && (<small className="text-danger">{errors.bookName}</small>)}
+                            {errors.bookId && (<small className="text-danger">{errors.bookId}</small>)}
                             </div>
 
                             <div className="mb-3">

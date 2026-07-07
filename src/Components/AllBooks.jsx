@@ -7,7 +7,7 @@ const AllBooks = () => {
 
   async function getBooks() {
     try {
-      const res = await axios.get("https://readify-fdkn.onrender.com/books/books");
+      const res = await axios.get("https://readify-fdkn.onrender.com/books");
       setBooks(res.data);
     } catch (err) {
       console.log(err);

@@ -10,7 +10,7 @@ const UserViewBook = () => {
   const [quantity, setQuantity] = useState(1);
   const navigate = useNavigate();
   const getBooks = async () => {
-    const res = await axios.get(`https://readify-fdkn.onrender.com/books/books/${id}`);
+    const res = await axios.get(`https://readify-fdkn.onrender.com/books/${id}`);
     setBook(res.data);
   };
 
@@ -37,7 +37,7 @@ const UserViewBook = () => {
 
       // Check if this book already exists in the user's cart
       const res = await axios.get(
-        `https://readify-fdkn.onrender.com/books/cart?username=${loggedUser.username}&bookId=${book.id}`
+        `https://readify-fdkn.onrender.com/cart?username=${loggedUser.username}&bookId=${book.id}`
       );
 
       if (res.data.length > 0) {
@@ -53,7 +53,7 @@ const UserViewBook = () => {
         }
 
         await axios.patch(
-          `https://readify-fdkn.onrender.com/books/cart/${existingItem.id}`,
+          `https://readify-fdkn.onrender.com/cart/${existingItem.id}`,
           {
             quantity: newQuantity,
             total: newQuantity * book.price,
@@ -76,7 +76,7 @@ const UserViewBook = () => {
         };
 
         await axios.post(
-          "https://readify-fdkn.onrender.com/books/cart",
+          "https://readify-fdkn.onrender.com/cart",
           cartItem
         );
       }

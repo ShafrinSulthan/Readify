@@ -30,7 +30,7 @@ const UserProfile = () => {
   const fetchUser = async () => {
     try {
       const res = await axios.get(
-        `https://readify-fdkn.onrender.com/books/users?username=${loggedUser.username}`
+        `https://readify-fdkn.onrender.com/users?username=${loggedUser.username}`
       );
 
       const data = res.data[0];
@@ -63,7 +63,7 @@ const UserProfile = () => {
     try {
 
       await axios.put(
-        `https://readify-fdkn.onrender.com/books/users/${user.id}`,
+        `https://readify-fdkn.onrender.com/users/${user.id}`,
         {
           ...user,
           address: [user.address]
