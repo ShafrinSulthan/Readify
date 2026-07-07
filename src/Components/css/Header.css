@@ -1,0 +1,162 @@
+
+.hero-section{
+    width:100%;
+    min-height:90vh;
+    padding-top: 145px !important;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
+    display:flex;
+    align-items:center;
+
+    padding:80px 8%;
+}
+.hero-section {
+    padding-top: 90px;
+}
+
+.hero-content{
+    max-width:550px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    line-height:1.15;
+    font-weight:700;
+    color:#222;
+}
+
+.hero-content span{
+    color:#e96a0b;
+}
+
+.hero-content p{
+    margin:25px 0;
+    color:#666;
+    font-size:1.15rem;
+    line-height:1.8;
+}
+
+.hero-btns{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.shop-btn{
+    border:none;
+    background:#e96a0b;
+    color:#fff;
+    padding:16px 35px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.shop-btn:hover{
+    background:#cf5d08;
+}
+
+.browse-btn{
+    background:#fff;
+    border:2px solid #e96a0b;
+    color:#e96a0b;
+    padding:16px 35px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.browse-btn:hover{
+    background:#e96a0b;
+    color:#fff;
+}
+
+/* ---------------- Tablet ---------------- */
+
+@media (max-width:992px){
+
+    .hero-section{
+        min-height:70vh;
+        padding:70px 6%;
+        background-position:right center;
+    }
+
+    .hero-content{
+        max-width:450px;
+    }
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .shop-btn,
+    .browse-btn{
+        padding:14px 28px;
+        font-size:16px;
+    }
+
+}
+
+/* ---------------- Mobile ---------------- */
+
+@media (max-width:768px){
+
+    .hero-section{
+
+        min-height:600px;
+
+        background-size:cover;
+        background-position:75% center;
+
+        justify-content:center;
+        text-align:center;
+
+        padding:50px 20px;
+    }
+
+    .hero-content{
+        max-width:100%;
+    }
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .hero-content p{
+        font-size:.95rem;
+        margin:20px 0;
+    }
+
+    .hero-btns{
+        justify-content:center;
+    }
+
+    .shop-btn,
+    .browse-btn{
+        width:100%;
+        max-width:280px;
+    }
+
+}
+
+/* ---------------- Small Phones ---------------- */
+
+@media (max-width:480px){
+
+    .hero-content h1{
+        font-size:1.8rem;
+    }
+
+    .hero-content p{
+        font-size:.9rem;
+    }
+
+}

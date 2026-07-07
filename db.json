@@ -1,0 +1,175 @@
+{
+  "books": [
+    {
+      "bookId": 1001,
+      "bookName": "Ponniyin Selvan",
+      "author": "Kalki",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStnNrUGYy5jfb_4oNOcC0Npwq8ohvkKT_RoJaT9-KlHA&s=10",
+      "category": "fiction",
+      "genre": "history, drama",
+      "price": 250,
+      "stockCount": 14,
+      "id": "kMiXhIaDHTk"
+    },
+    {
+      "bookId": 1002,
+      "bookName": "Atomic Habits",
+      "author": "James Clear",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHRf6nHw7RRPL4RVP18iyehq7vKhIAPGnFBFZf3b_PSQ&s=10",
+      "category": "non-fiction",
+      "genre": "self-help",
+      "price": 450,
+      "stockCount": 15,
+      "id": "2A33LVPcnvs"
+    },
+    {
+      "bookId": 1003,
+      "bookName": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTx9XU7hJrXBHLw4iQq2UZ6mVWzlstum9CZIm9CBTPQg&s=10",
+      "category": "fiction",
+      "genre": "fantasy, magic, adventure",
+      "price": 350,
+      "stockCount": 25,
+      "id": "lbDSLyW4Rf0"
+    },
+    {
+      "bookId": 1004,
+      "bookName": "The Alchemist",
+      "author": "Paulo Coelho",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbSczjvyLkqMHnyDdmu1gPmjG2y3pcl8_Anab9Y6Zy4w&s=10",
+      "category": "fiction",
+      "genre": "philosophy, adventure",
+      "price": 300,
+      "stockCount": 18,
+      "id": "JzG_Ia1MXq0"
+    },
+    {
+      "bookId": 1005,
+      "bookName": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqHXirJ-JfH_opQViiQQ29QMZtuOF3bC95PhDe0h2Y-A&s=10",
+      "category": "non-fiction",
+      "genre": "finance, motivation",
+      "price": 4000,
+      "stockCount": 12,
+      "id": "2TxVS7cqS2U"
+    },
+    {
+      "bookId": 1006,
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkzgn53-pblSjwFTkW1MyalNuRb1CWgG3-1fHlnS9Ybg&s=10",
+      "category": "fiction",
+      "genre": "love, classic",
+      "price": 280,
+      "stockCount": 22,
+      "id": "YFEYz8AP8eM"
+    },
+    {
+      "bookId": 1007,
+      "bookName": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ0gIqBfl9glxQq-IUaThSTt10YKWPsIAgvXJ43aQgLg&s=10",
+      "category": "non-fiction",
+      "genre": "human evolution",
+      "price": 550,
+      "stockCount": 10,
+      "id": "nZuc1qfb2oo"
+    },
+    {
+      "bookId": 1008,
+      "bookName": "The Power of Now",
+      "author": "Eckhart Tolle",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeZojDvIYDfvS3U5vS2Fhjh5gbM4u4PWVRDX9o8sXjmw&s=10",
+      "category": "non-fiction",
+      "genre": "mindfulness",
+      "price": 320,
+      "stockCount": 14,
+      "id": "5R4FTCJvfsc"
+    }
+  ],
+  "users": [
+    {
+      "username": "user1",
+      "password": "abc",
+      "email": "abc@email.com",
+      "role": "user",
+      "gender": "male",
+      "phone": "99289927",
+      "address": [
+        {
+          "doorNo": "7/2",
+          "apartment": "Credo Apartment",
+          "street": "ABC Street, Okkiyam Pettai",
+          "city": "Chennai",
+          "pincode": 600012
+        }
+      ],
+      "id": "ZJ2QW0GBZ8G"
+    },
+    {
+      "username": "user2",
+      "password": "xyz123",
+      "email": "user2@email.com",
+      "role": "user",
+      "gender": "female",
+      "phone": 9876543210,
+      "address": [
+        {
+          "doorNo": "12A",
+          "apartment": "Green Residency",
+          "street": "Anna Nagar Main Road",
+          "city": "Coimbatore",
+          "pincode": 641001
+        }
+      ],
+      "id": "A1B2C3D4E5"
+    },
+    {
+      "username": "user3",
+      "password": "pass@123",
+      "email": "user3@email.com",
+      "role": "admin",
+      "gender": "male",
+      "phone": 9123456789,
+      "address": [
+        {
+          "doorNo": "45",
+          "apartment": "Sky Heights",
+          "street": "MG Road",
+          "city": "Bengaluru",
+          "pincode": 560001
+        }
+      ],
+      "id": "X9Y8Z7W6V5"
+    }
+  ],
+  "orders": [
+    {
+      "bookId": "kMiXhIaDHTk",
+      "bookName": "Ponniyin Selvan",
+      "author": "Kalki",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStnNrUGYy5jfb_4oNOcC0Npwq8ohvkKT_RoJaT9-KlHA&s=10",
+      "price": 250,
+      "quantity": 2,
+      "total": 500,
+      "stockCount": 16,
+      "username": "user1",
+      "id": "mvxWlXyElnU",
+      "address": [
+        {
+          "doorNo": "7/2",
+          "apartment": "Credo Apartment",
+          "street": "ABC Street, Okkiyam Pettai",
+          "city": "Chennai",
+          "pincode": 600012
+        }
+      ],
+      "orderDate": "7/7/2026",
+      "status": "Pending"
+    }
+  ],
+  "cart": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
