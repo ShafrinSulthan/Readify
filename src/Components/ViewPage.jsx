@@ -8,7 +8,7 @@ const ViewPage = () => {
     const [keyword, setKeyword] = useState("")
     async function fetchBooks(params) {
         try {
-            const res = await axios.get('http://https://readify-fdkn.onrender.com/books/books')
+            const res = await axios.get('https://readify-fdkn.onrender.com/books/books')
             setBooks(res.data)
         } catch (error) {
             console.log(error)
@@ -35,7 +35,7 @@ const ViewPage = () => {
     }
     async function deleteBook(id) {
         try {
-            const res = await axios.delete(`http://https://readify-fdkn.onrender.com/books/books/${id}`)
+            const res = await axios.delete(`https://readify-fdkn.onrender.com/books/books/${id}`)
             console.log(res.data)
             alert("Book delete successfully")
             fetchBooks()

@@ -16,7 +16,7 @@ const UserCart = () => {
 
     try {
       const res = await axios.get(
-        `http://https://readify-fdkn.onrender.com/books/cart?username=${loggedUser.username}`
+        `https://readify-fdkn.onrender.com/books/cart?username=${loggedUser.username}`
       );
       setCart(res.data);
     } catch (err) {
@@ -30,7 +30,7 @@ const UserCart = () => {
       return;
     }
 
-    await axios.patch(`http://https://readify-fdkn.onrender.com/books/cart/${item.id}`, {
+    await axios.patch(`https://readify-fdkn.onrender.com/books/cart/${item.id}`, {
       quantity: item.quantity + 1,
       total: (item.quantity + 1) * item.price,
     });
@@ -41,7 +41,7 @@ const UserCart = () => {
   const decrease = async (item) => {
     if (item.quantity <= 1) return;
 
-    await axios.patch(`http://https://readify-fdkn.onrender.com/books/cart/${item.id}`, {
+    await axios.patch(`https://readify-fdkn.onrender.com/books/cart/${item.id}`, {
       quantity: item.quantity - 1,
       total: (item.quantity - 1) * item.price,
     });
@@ -50,17 +50,17 @@ const UserCart = () => {
   };
 
   const removeItem = async (id) => {
-    await axios.delete(`http://https://readify-fdkn.onrender.com/books/cart/${id}`);
+    await axios.delete(`https://readify-fdkn.onrender.com/books/cart/${id}`);
     fetchCart();
   };
   const clearCart = async () => {
     try {
       const res = await axios.get(
-        `http://https://readify-fdkn.onrender.com/books/cart?username=${loggedUser.username}`
+        `https://readify-fdkn.onrender.com/books/cart?username=${loggedUser.username}`
       );
 
       for (const item of res.data) {
-        await axios.delete(`http://https://readify-fdkn.onrender.com/books/cart/${item.id}`);
+        await axios.delete(`https://readify-fdkn.onrender.com/books/cart/${item.id}`);
       }
 
       fetchCart();
@@ -74,7 +74,7 @@ const UserCart = () => {
     try {
       // Get logged-in user details
       const userRes = await axios.get(
-        `http://https://readify-fdkn.onrender.com/books/users?username=${loggedUser.username}`
+        `https://readify-fdkn.onrender.com/books/users?username=${loggedUser.username}`
       );
 
       const currentUser = userRes.data[0];
@@ -91,7 +91,7 @@ const UserCart = () => {
 
       // Get cart items
       const cartRes = await axios.get(
-        `http://https://readify-fdkn.onrender.com/books/cart?username=${loggedUser.username}`
+        `https://readify-fdkn.onrender.com/books/cart?username=${loggedUser.username}`
       );
 
       const cartItems = cartRes.data;
@@ -104,7 +104,7 @@ const UserCart = () => {
       for (const item of cartItems) {
 
         // Save order
-        await axios.post("http://https://readify-fdkn.onrender.com/books/orders", {
+        await axios.post("https://readify-fdkn.onrender.com/books/orders", {
           ...item,
           username: currentUser.username,
           address: currentUser.address,
@@ -114,7 +114,7 @@ const UserCart = () => {
 
         // Get latest book details
         const bookRes = await axios.get(
-          `http://https://readify-fdkn.onrender.com/books/books/${item.bookId}`
+          `https://readify-fdkn.onrender.com/books/books/${item.bookId}`
         );
 
         const currentBook = bookRes.data;
@@ -127,7 +127,7 @@ const UserCart = () => {
 
         // Update stock
         await axios.patch(
-          `http://https://readify-fdkn.onrender.com/books/books/${item.bookId}`,
+          `https://readify-fdkn.onrender.com/books/books/${item.bookId}`,
           {
             stockCount: currentBook.stockCount - item.quantity,
           }
@@ -135,7 +135,7 @@ const UserCart = () => {
 
         // Remove from cart
         await axios.delete(
-          `http://https://readify-fdkn.onrender.com/books/cart/${item.id}`
+          `https://readify-fdkn.onrender.com/books/cart/${item.id}`
         );
       }
 

@@ -17,7 +17,7 @@ const UserAllBooks = () => {
   });
 
   async function fetchBooks(params) {
-    const res = await axios.get('http://https://readify-fdkn.onrender.com/books/books')
+    const res = await axios.get('https://readify-fdkn.onrender.com/books/books')
     setBooks(res.data)
   }
   useEffect(() => {

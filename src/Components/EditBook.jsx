@@ -20,7 +20,7 @@ const EditBook = () => {
     useEffect(() => {
         async function getBook() {
             try {
-                const res = await axios.get(`http://https://readify-fdkn.onrender.com/books/books/${id}`);
+                const res = await axios.get(`https://readify-fdkn.onrender.com/books/books/${id}`);
                 setBook(res.data);
             } catch (error) {
                 console.log(error);
@@ -87,7 +87,7 @@ const EditBook = () => {
 
     try {
         const res = await axios.put(
-            `http://https://readify-fdkn.onrender.com/books/books/${id}`,
+            `https://readify-fdkn.onrender.com/books/books/${id}`,
             book
         );
 
