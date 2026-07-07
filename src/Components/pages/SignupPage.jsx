@@ -86,7 +86,7 @@ const SignupPage = () => {
 
     // validation end
 
-    const res = await axios.post(`http://localhost:5000/users`, formData)
+    const res = await axios.post(`http://https://readify-fdkn.onrender.com/books/users`, formData)
     if (res.data) {
       alert('Account created..')
       setFormData({
@@ -111,7 +111,7 @@ const SignupPage = () => {
   async function checkUsername(e) {
     try {
       const res = await axios.get(
-        `http://localhost:5000/users?username=${e.target.value}`
+        `http://https://readify-fdkn.onrender.com/books/users?username=${e.target.value}`
       );
 
       if (res.data.length > 0) {

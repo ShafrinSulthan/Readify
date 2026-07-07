@@ -31,11 +31,11 @@ const AddBook = () => {
 
         try {
             const res = await axios.get(
-                `http://localhost:5000/books?bookId=${book.bookId}`
+                `http://https://readify-fdkn.onrender.com/books/books?bookId=${book.bookId}`
             );
 
             if (res.data.length === 0) {
-                await axios.post("http://localhost:5000/books", book);
+                await axios.post("http://https://readify-fdkn.onrender.com/books/books", book);
 
                 alert("Added Successfully");
 

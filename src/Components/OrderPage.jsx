@@ -7,7 +7,7 @@ const OrderPage = () => {
 
   async function fetchOrders() {
     try {
-      const res = await axios.get("http://localhost:5000/orders");
+      const res = await axios.get("http://https://readify-fdkn.onrender.com/books/orders");
       setOrders(res.data);
     } catch (err) {
       console.log(err);

@@ -6,7 +6,7 @@ const UserPage = () => {
   const [users, setUsers] = useState([]);
 
   async function fetchUsers() {
-    const res = await axios.get("http://localhost:5000/users");
+    const res = await axios.get("http://https://readify-fdkn.onrender.com/books/users");
     setUsers(res.data);
   }
 
