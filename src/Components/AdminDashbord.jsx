@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { Link, Outlet, useNavigate } from 'react-router-dom'
 import { MyContext } from '../App'
-import logo from "../assets/logo.png";
+import Logo from "../assets/Logo.png";
 
 const AdminDashbord = () => {
   const { loggedUser, setLoggedUser } = useContext(MyContext)
@@ -33,7 +33,7 @@ const AdminDashbord = () => {
 
           <div className="offcanvas offcanvas-start bg-dark text-light" id="menu">
             <div className="offcanvas-header">
-              <img src={logo} alt="Logo" className="img-fluid" width="60" height="60"/>
+              <img src={Logo} alt="Logo" className="img-fluid" width="60" height="60"/>
               <button className="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
             </div>
             <div className="offcanvas-body">
@@ -53,7 +53,7 @@ const AdminDashbord = () => {
           <div className="sidebar col-lg-2 d-none d-lg-block">
 
             <div className="sidebar-box  bg-dark text-light p-3">
-              <img src={logo} alt="Logo" className="img-fluid" width="100"/>
+              <img src={Logo} alt="Logo" className="img-fluid" width="100"/>
 
               <div className="mt-5">
                 <Link to='/admin' className='nav-link my-3'>Home</Link>
